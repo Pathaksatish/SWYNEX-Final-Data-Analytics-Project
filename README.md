@@ -2,37 +2,35 @@
 
 ## 📊 Project Overview
 
-This project is a complete Data Analytics case study developed as part of my SWYNEX internship.
+This project is a complete end-to-end Data Analytics case study developed as part of my SWYNEX internship.
 
-The project focuses on analyzing Cafe Sales transaction data to understand sales performance, product performance, transaction trends, payment methods, and business patterns.
+The project analyzes Cafe Sales transaction data to understand sales performance, product performance, transaction patterns, payment methods, and business trends.
 
-The complete analytics workflow includes data cleaning, exploratory data analysis, data visualization, dashboard development, and business insights.
+The complete analytics workflow covers:
+
+**Data Cleaning → Exploratory Data Analysis → Dashboard Development → Business Insights**
 
 ---
 
 ## 🎯 Problem Statement
 
-The objective of this project is to analyze cafe sales transaction data and identify meaningful patterns and trends in sales performance.
+The objective of this project is to analyze cafe sales transaction data and identify meaningful patterns and trends that can support business decision-making.
 
 The analysis focuses on:
 
-- Understanding overall sales performance
-- Analyzing product-wise sales and quantity
-- Identifying transaction trends
-- Analyzing payment methods
-- Comparing business performance across locations
-- Creating an interactive dashboard
-- Generating actionable business insights
+- Overall sales performance
+- Product-wise sales and quantity
+- Transaction performance
+- Payment method preferences
+- Location-wise performance
+- Monthly sales trends
+- Interactive business reporting
 
 ---
 
-## 📁 Dataset Information
+## 📁 Dataset
 
-**Dataset:** Cafe Sales Dataset
-
-The dataset contains transaction-level information related to cafe sales.
-
-Key fields include:
+The project uses a Cafe Sales transaction dataset containing information such as:
 
 - Transaction ID
 - Item
@@ -47,97 +45,121 @@ The raw dataset was cleaned and prepared before performing analysis.
 
 ---
 
-## 🧹 Data Cleaning & Preparation
+## 🧹 1. Data Cleaning — PostgreSQL
 
-Data cleaning and preparation were performed using PostgreSQL.
+The data cleaning process was performed using PostgreSQL.
 
-The major cleaning activities included:
+### Cleaning activities included:
 
 - Creating a staging table
-- Handling missing and invalid values
+- Handling missing values
+- Handling invalid values
 - Converting data types
-- Cleaning transaction-related fields
+- Cleaning transaction fields
 - Calculating missing total spending values
 - Validating the cleaned dataset
 - Preparing the final dataset for analysis
 
+📂 **Folder:** `01_Data_Cleaning`
+
 ---
 
-## 📈 Exploratory Data Analysis
+## 📈 2. Exploratory Data Analysis — Excel
 
 Exploratory Data Analysis was performed using Microsoft Excel.
 
-The analysis included:
+### Analysis included:
 
 - KPI analysis
-- Product-wise analysis
-- Sales analysis
-- Quantity analysis
-- Transaction analysis
-- Payment method analysis
-- Location analysis
-- Pivot tables
-- Charts and visualizations
-
----
-
-## 📊 Interactive Power BI Dashboard
-
-An interactive dashboard was developed using Microsoft Power BI.
-
-The dashboard includes:
-
 - Total Sales
 - Total Quantity
 - Total Transactions
-- Average Transaction Value
 - Average Unit Price
+- Average Transaction Value
+- Product-wise sales
+- Product-wise quantity
+- Payment method analysis
+- Location-wise analysis
+- Pivot tables
+- Charts
+- Outlier and anomaly analysis
+
+### Key Metrics
+
+| Metric | Value |
+|---|---:|
+| Total Transactions | 10,000 |
+| Total Quantity Sold | 28,834 |
+| Total Sales | 88,952 |
+| Number of Products | 8 |
+
+📂 **Folder:** `02_Excel_Analysis`
+
+---
+
+## 📊 3. Interactive Power BI Dashboard
+
+An interactive Power BI dashboard was developed to visualize the cleaned and analyzed data.
+
+### Dashboard includes:
+
+- Total Sales KPI
+- Total Quantity KPI
+- Total Transactions KPI
+- Average Unit Price
+- Average Transaction Value
 - Product-wise analysis
 - Payment Method analysis
-- Location analysis
+- Location-wise analysis
 - Monthly sales trends
-- Interactive filters and slicers
+- Interactive slicers and filters
 
-The dashboard helps users explore sales performance interactively and identify important business trends.
+### Power BI techniques used:
+
+- Power Query
+- Data Transformation
+- Data Modeling
+- DAX Measures
+- KPI Cards
+- Charts
+- Slicers
+- Interactive Dashboard Design
+
+📂 **Folder:** `03_PowerBI_Dashboard`
 
 ---
 
 ## 💡 Key Business Insights
 
-The final analysis provides insights into:
+The analysis helps identify:
 
-- Overall cafe sales performance
-- Product contribution to sales
-- Product quantity performance
+- Overall sales performance
+- Products contributing significantly to sales
+- Products with higher sales quantities
 - Customer payment preferences
-- Location-wise performance
+- Location-wise sales patterns
 - Monthly sales trends
-- Areas that may require further business attention
-
----
-
-## 🛠️ Tools & Technologies
-
-- **PostgreSQL** – Data Cleaning & SQL Analysis
-- **Microsoft Excel** – Exploratory Data Analysis
-- **Microsoft Power BI** – Interactive Dashboard & Visualization
-- **GitHub** – Project Documentation & Version Control
+- Potential areas for business improvement
 
 ---
 
 ## 🔄 Project Workflow
 
 ```text
-Raw Dataset
-     ↓
-Data Cleaning using PostgreSQL
-     ↓
+Raw Cafe Sales Dataset
+        ↓
+Data Cleaning & Preparation
+        ↓
+PostgreSQL
+        ↓
 Cleaned Dataset
-     ↓
-Exploratory Data Analysis using Excel
-     ↓
-Interactive Dashboard using Power BI
-     ↓
+        ↓
+Exploratory Data Analysis
+        ↓
+Microsoft Excel
+        ↓
+Interactive Dashboard
+        ↓
+Microsoft Power BI
+        ↓
 Business Insights
-     ↓
-Final Data Analytics Case Study
